@@ -3,7 +3,7 @@ async function getApiData() {
     const loadingElement = document.getElementById('loading');
 
     try {
-        const response = await fetch('https://jsonplaceholder.typicode.com/posts?_limit=5');
+        const response = await fetch('https://jsonplaceholder.typicode.com/posts');
         
 
         if (!response.ok) {
