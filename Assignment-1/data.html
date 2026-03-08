@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project | Fetch Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="container nav-wrapper">
+            <div class="nav-left">
+                <a href="data.html" class="logo">API Data Fetches</a>
+            </div>
+            <ul class="nav-right">
+                <li><a href="home.html">Home </a></li>
+                <li><a href="data.html" class="active">Fetches Data</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="data-section">
+            <div class="section-header">
+                <h2>API Feed Results</h2>
+                <p>Displaying live posts from <code>JSONPlaceholder</code></p>
+            </div>
+
+    
+            <button class="postbutton" onclick="loadPosts()">Load Posts</button>
+
+            <div id="posts" class="data-grid">
+                <p id="error"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 My API Project. All rights reserved.</p>
+            <p>Data provided by JSONPlaceholder API</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
