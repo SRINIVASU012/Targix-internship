@@ -1,28 +1,37 @@
-const postsContainer = document.getElementById('posts');
-const errorContainer = document.getElementById('error');
-const API_URL = 'https://jsonplaceholder.typicode.com/posts?_limit=6';
+async function getApiData() {
+    const container = document.getElementById('posts');
+    const loadingElement = document.getElementById('loading');
 
-async function loadPosts() {
     try {
-        const response = await fetch(API_URL);
+        const response = await fetch('https://jsonplaceholder.typicode.com/posts?_limit=5');
         
+
         if (!response.ok) {
-            throw new Error('Network response was not ok');
+            throw new Error(`HTTP error! status: ${response.status}`);
         }
-        
+
         const data = await response.json();
-        displayPosts(data);
+        renderData(data);
+
     } catch (error) {
-        errorContainer.innerHTML = `<p class="error-msg">Oops! We couldn't load the data. Please check your connection and try again.</p>`;
-        console.error('Fetch error:', error);
+        console.error("Fetch error: ", error);
+        container.innerHTML = `<p class="error">Failed to load data. Please try again later.</p>`;
+    } finally {
+        if (loadingElement) loadingElement.style.display = 'none';
     }
 }
 
-function displayPosts(posts) {
-    postsContainer.innerHTML = posts.map(post => `
-        <div class="card">
+
+function renderData(posts) {
+    const container = document.getElementById('posts');
+    container.innerHTML = posts.map(post => `
+        <div class="data-card">
             <h3>${post.title}</h3>
             <p>${post.body}</p>
         </div>
     `).join('');
+}
+
+if (document.getElementById('posts')) {
+    window.addEventListener('loadposts', getApiData);
 }
