@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import {styled} from "styled-components";
 
 export const Card = styled.div`
   background: ${({ theme }) =>
@@ -9,4 +9,3 @@ export const Card = styled.div`
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   transition: 0.3s;
 `;
-

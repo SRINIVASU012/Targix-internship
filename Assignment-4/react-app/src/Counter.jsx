@@ -25,16 +25,18 @@ const Button = styled.button`
 
   return (
     <Card theme={theme}>
-      <h2>Counter: {count}</h2>
+      <h2 style={theme === "light" ? { color: "#333" } : { color: "#fff" }}>
+        Counter: {count}
+      </h2>
       <Button theme={theme} onClick={increment}>
         +
       </Button>
       <Button theme={theme} onClick={decrement}>
         -
       </Button>
-      <button theme={theme} onClick={reset}>
+      <Button theme={theme} onClick={reset}>
         reset
-      </button>
+      </Button>
     </Card>
   );
 };

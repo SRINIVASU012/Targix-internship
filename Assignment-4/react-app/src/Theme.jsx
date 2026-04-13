@@ -24,4 +24,3 @@ const ToggleButton = styled.button`
   );
 };
 
-// export default ThemeToggle;
