@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Assignment-8_jwtproject/Assignment-8_jwtproject.iml" filepath="$PROJECT_DIR$/Assignment-8_jwtproject/Assignment-8_jwtproject.iml" />
       <module fileurl="file://$PROJECT_DIR$/internship.iml" filepath="$PROJECT_DIR$/internship.iml" />
     </modules>
   </component>

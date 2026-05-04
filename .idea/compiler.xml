@@ -2,10 +2,12 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Assignment-8_jwtproject" />
         <module name="Assignment-7task-manager" />
       </profile>
     </annotationProcessing>
@@ -16,6 +18,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Assignment-7task-manager" options="-parameters" />
+      <module name="Assignment-8_jwtproject" options="-parameters" />
       <module name="jwt-project" options="-parameters" />
     </option>
   </component>

@@ -1,10 +1,10 @@
-package com.example.taskmanager;
+package com.example.assignment8_jwtproject;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TaskManagerApplicationTests {
+class Assignment8JwtprojectApplicationTests {
 
     @Test
     void contextLoads() {
