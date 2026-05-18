@@ -11,7 +11,7 @@ export const Page2 = () => {
 
   const handleSubmit = async () => {
     try {
-      const res = await fetch("https://dummyjson.com/products/add", {
+      const res = await fetch("http://localhost:8080/api/items", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -59,4 +59,7 @@ export const Page2 = () => {
   );
 }
 
+export const FormFields=()=>{
+  
+}
 

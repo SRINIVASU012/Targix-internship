@@ -8,17 +8,34 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Assignment-8_jwtproject" />
+        <module name="Assignment-9-hibernate" />
+        <module name="Assignment-9-springboot" />
         <module name="Assignment-7task-manager" />
+      </profile>
+      <profile name="Annotation profile for Assignment-10-connecting-react" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
+        </processorPath>
+        <module name="Assignment-10-connecting-react" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Assignment-9-Hibernate" target="17" />
+      <module name="Assignment-9-hibernate" target="17" />
       <module name="jwt-project" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Assignment-10-connecting-react" options="-parameters" />
       <module name="Assignment-7task-manager" options="-parameters" />
       <module name="Assignment-8_jwtproject" options="-parameters" />
+      <module name="Assignment-9-Hibernate" options="-parameters" />
+      <module name="Assignment-9-hibernate" options="-parameters" />
+      <module name="Assignment-9-springboot" options="-parameters" />
       <module name="jwt-project" options="-parameters" />
     </option>
   </component>

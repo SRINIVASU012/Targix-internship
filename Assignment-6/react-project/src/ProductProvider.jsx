@@ -18,12 +18,12 @@ export const ProductProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, { products: [] });
 
   useEffect(() => {
-    fetch("https://dummyjson.com/products")
+    fetch("http://localhost:8080/api/items")
       .then((res) => res.json())
       .then((data) => {
         dispatch({
           type: "SET_PRODUCTS",
-          payload: data.products,
+          payload: data,
         });
       })
       .catch((err) => console.log(err));

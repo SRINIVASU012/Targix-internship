@@ -1,13 +1,11 @@
 import styled from "styled-components";
 
-/* Page Container */
 export const Container = styled.div`
   padding: 20px;
   min-height: 100vh;
   background: #d0e6e6;
 `;
 
-/* Header */
 export const Header = styled.h1`
   font-size: 28px;
   font-weight: 600;
@@ -17,7 +15,6 @@ export const Header = styled.h1`
   
 `;
 
-/* Filters Wrapper */
 export const Filters = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -25,7 +22,6 @@ export const Filters = styled.div`
   margin-bottom: 20px;
 `;
 
-/* Table Wrapper */
 export const TableWrapper = styled.div`
   background: white;
   padding: 15px;
@@ -33,7 +29,6 @@ export const TableWrapper = styled.div`
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 `;
 
-/* Styled Button */
 export const PrimaryButton = styled.button`
   background: #2E7D32;
   color: white;
@@ -46,7 +41,6 @@ export const PrimaryButton = styled.button`
   }
 `;
 
-/* Center Card (Page2) */
 export const CenterCard = styled.div`
   max-width: 400px;
   margin: 50px auto;

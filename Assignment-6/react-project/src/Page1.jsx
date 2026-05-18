@@ -8,8 +8,7 @@ import { Container, Header } from "./StyledComponents";
 const { RangePicker } = DatePicker;
 
 export const Page1 = () => {
-  const { products } = useContext(ProductContext);
-
+const { products = [] } = useContext(ProductContext);
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("");
   const [open, setOpen] = useState(false);
@@ -20,17 +19,28 @@ export const Page1 = () => {
   ]);
 
   const filtered = products.filter((p) => {
-    return (
-      p.title.toLowerCase().includes(search.toLowerCase()) &&
-      (!category || p.category === category)
-    );
-  });
+  return (
+    (p.itemName || "")
+      .toLowerCase()
+      .includes(search.toLowerCase()) &&
+    (!category || p.type === category)
+  );
+});
 
-  const columns = [
-    { title: "Item Name", dataIndex: "title" },
-    { title: "Price (₹)", dataIndex: "price" },
-    { title: "Type", dataIndex: "category" },
-  ];
+ const columns = [
+  {
+    title: "Item Name",
+    dataIndex: "itemName",
+  },
+  {
+    title: "Price (₹)",
+    dataIndex: "price",
+  },
+  {
+    title: "Type",
+    dataIndex: "type",
+  },
+];
 
   return (
     <Container>
@@ -77,4 +87,5 @@ export const Page1 = () => {
     </Container>
   );
 }
+
 
