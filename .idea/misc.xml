@@ -12,6 +12,8 @@
         <option value="$PROJECT_DIR$/Assignment-9-hibernate/pom.xml" />
         <option value="$PROJECT_DIR$/Assignment-9-springboot/pom.xml" />
         <option value="$PROJECT_DIR$/Assignment-10-connecting-react/pom.xml" />
+        <option value="$PROJECT_DIR$/course-management-system-backend/pom.xml" />
+        <option value="$PROJECT_DIR$/course-management-system/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
@@ -20,7 +22,7 @@
       </set>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_25" default="true" project-jdk-name="25" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_25_PREVIEW" project-jdk-name="25" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

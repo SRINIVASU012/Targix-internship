@@ -12,19 +12,21 @@
         <module name="Assignment-9-springboot" />
         <module name="Assignment-7task-manager" />
       </profile>
-      <profile name="Annotation profile for Assignment-10-connecting-react" enabled="true">
+      <profile name="Annotation profile for course-management-system" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
         </processorPath>
+        <module name="course-management-system" />
         <module name="Assignment-10-connecting-react" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Assignment-9-Hibernate" target="17" />
       <module name="Assignment-9-hibernate" target="17" />
+      <module name="course-management-system-backend" target="17" />
       <module name="jwt-project" target="17" />
     </bytecodeTargetLevel>
   </component>
@@ -36,6 +38,8 @@
       <module name="Assignment-9-Hibernate" options="-parameters" />
       <module name="Assignment-9-hibernate" options="-parameters" />
       <module name="Assignment-9-springboot" options="-parameters" />
+      <module name="course-management-system" options="-parameters" />
+      <module name="course-management-system-backend" options="-parameters" />
       <module name="jwt-project" options="-parameters" />
     </option>
   </component>
